@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Envíos | Masivos WhatsApp</title>
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
+    <script type="module" src="../assets/js/history.js"></script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Barra de navegación -->
+    <header class="bg-blue-600 p-4 text-white text-center text-xl font-bold">
+        Historial de Envíos
+    </header>
+    
+    <div class="container mx-auto mt-6 p-4">
+        <!-- Lista de mensajes enviados -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-center mb-4">Historial de Mensajes</h3>
+            <table class="w-full border-collapse">
+                <thead>
+                    <tr class="bg-gray-200">
+                        <th class="p-2 text-left">Fecha</th>
+                        <th class="p-2 text-left">Mensaje</th>
+                        <th class="p-2 text-left">Destinatarios</th>
+                        <th class="p-2 text-center">Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="history-list">
+                    <!-- Los mensajes enviados se agregarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

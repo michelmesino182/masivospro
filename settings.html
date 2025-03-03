@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración | Masivos WhatsApp</title>
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
+    <script type="module" src="../assets/js/settings.js"></script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Barra de navegación -->
+    <header class="bg-blue-600 p-4 text-white text-center text-xl font-bold">
+        Configuración
+    </header>
+    
+    <div class="container mx-auto mt-6 p-4">
+        <!-- Configuración de Usuario -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h3 class="text-xl font-semibold text-center mb-4">Perfil de Usuario</h3>
+            <p><strong>Correo Electrónico:</strong> <span id="user-email">-</span></p>
+            <button id="logout-btn" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700">Cerrar Sesión</button>
+        </div>
+
+        <!-- Configuración de WhatsApp Web -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-center mb-4">Conexión con WhatsApp Web</h3>
+            <p>Para enviar mensajes masivos, asegúrate de estar conectado a WhatsApp Web.</p>
+            <button id="connect-whatsapp" class="mt-4 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">Conectar WhatsApp</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Masivos WhatsApp</title>
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="../assets/js/dashboard.js"></script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Barra de navegación -->
+    <header class="bg-blue-600 p-4 text-white text-center text-xl font-bold">
+        Dashboard - Masivos WhatsApp
+    </header>
+    
+    <div class="container mx-auto mt-6 p-4">
+        <!-- Tarjetas de métricas -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold">Mensajes Enviados</h3>
+                <p id="total-messages" class="text-3xl text-blue-600 font-bold">0</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold">Contactos</h3>
+                <p id="total-contacts" class="text-3xl text-green-600 font-bold">0</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold">Último Envío</h3>
+                <p id="last-message-date" class="text-3xl text-red-600 font-bold">-</p>
+            </div>
+        </div>
+
+        <!-- Gráfico de actividad -->
+        <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-center mb-4">Estadísticas de Envíos</h3>
+            <canvas id="messagesChart"></canvas>
+        </div>
+    </div>
+
+</body>
+</html>
